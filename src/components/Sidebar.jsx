@@ -8,10 +8,10 @@ import { useStatContext } from "../context/ContextProvider"
 
 const Sidebar = () => {
     //    const activeMenu = true;
-    const currentColor = 'gray'
+    // const currentColor = 'gray'
     // const { activeMenu, setActiveMenu, } = useStatContext()
 
-    const { activeMenu, setActiveMenu, screenSize } = useStatContext()
+    const { activeMenu, setActiveMenu, screenSize, currentColor } = useStatContext()
 
     const handleCloseSideBar = () => {
         if (activeMenu && screenSize <= 900) {

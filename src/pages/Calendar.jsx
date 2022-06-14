@@ -6,11 +6,19 @@ import { Header } from '../components'
 
 
 const Calendar = () => {
+
+    // const handleChange = (event) => {
+    //     console.log("erty", event);
+    // }
+
     return (
         <div className='p-2 m-2 mt-24 bg-white md:m-10 md:p-10 rounded-3xl'>
             <Header category="App" title="Calendar"></Header>
             <ScheduleComponent
+                //  actionComplete={handleChange}
                 height="600px"
+                eventSettings={{ dataSource: scheduleData }}
+                selectedDate={new Date(2022, 6, 6)}
             >
                 <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}></Inject>
             </ScheduleComponent>

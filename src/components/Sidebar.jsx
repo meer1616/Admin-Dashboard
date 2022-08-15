@@ -34,7 +34,7 @@ const Sidebar = () => {
                             className="flex items-center gap-3 mt-4 ml-3 text-xl font-extrabold tracking-tight dark:text-white"
                         >
                             <SiShopware />
-                            <span>Meer here</span>
+                            <span>Go Drive</span>
                         </Link>
 
                         <TooltipComponent content="Menu" position="BottomCenter">
